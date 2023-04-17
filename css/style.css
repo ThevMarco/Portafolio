@@ -5,6 +5,7 @@
     --graylight:#f6f6f8;
     --negro:#000000;
     --grey:#e1e1e1;
+    --colorHover:#15ADA0;
     --fontPrincipal:'Raleway', sans-serif;
     --fontSecundaria:'Figtree', sans-serif;
     --fontAux:'Tilt Neon', cursive;
@@ -21,14 +22,15 @@ html{
 }
 
 body{
-    background: linear-gradient(to bottom, var(--graylight), var(--blanco)); 
+  
     font-family:var(--fontSecundaria);
     font-size:1.6rem;
     line-height:1.8;
+    background: linear-gradient(to bottom, var(--grey), var(--graylight)); 
     }
 
 
-/*GLOBALES*/
+
 .contenedor{
     position:fixed;
     width: 100%;
@@ -38,12 +40,21 @@ body{
     background-color: transparent;
     z-index: 999;
 }
+
+
+
 a{
     font-family:var(--fontAux);
     text-decoration:none;
     font-size:2.2rem;
     color: var(--colorPrimary);
 }
+a:hover {
+    color: var(--colorHover);
+    cursor: pointer;
+  }
+
+
 
 h1,h2,h3,h4{ 
     color:var(--colorPrimary);
@@ -56,10 +67,19 @@ h3{font-size:3.3rem;}
 h4{font-size:2.2rem;}
 img{max-width: 100%;}
 
+.saludo p{
+    font-size:3rem;
+}
+
+
+
+
 /*UTILIDADES*/
 .no-margin{margin:0;}
 .no-padding{padding:0;}
 .centrar-text{text-align:center;}
+
+
 
 
 .header{
@@ -83,6 +103,15 @@ img{max-width: 100%;}
     margin:0 auto;
     padding-top:30rem;
 }
+
+
+
+
+
+
+
+
+
 /*Contenido de la Foto perfil en el Header*/
 .fotoCV{
     grid-column:2 / 3;
@@ -95,15 +124,76 @@ height:80%;
 justify-content:center;
 align-items:center;
 }
-/******************************************/
 
 
+
+
+/*Logo NAV*/
 .logo{
     margin-top:2rem;
 }
 img{
     border:2px solid var(--colorPrimary);    
 }
+img:hover{
+    border:2px solid;    
+}
+
+
+
+
+/*MARCADOR DE LINEA -> */
+::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+
+
+.cuadro{
+    margin:5rem 10rem 5rem 10rem;
+    padding-left:3rem;
+    padding-right:3rem;
+    border-radius:2rem;
+}
+
+.cuadro{
+display:block;
+background:var(--blanco);
+padding:2rem;
+margin-bottom:auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+.contenido-footer{
+    background-image:url(../img/fondo_header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 160px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -124,5 +214,17 @@ img{
     margin-left:2rem;
     margin-right:2rem;
     }
+
+    .cuadro{
+        background:var(--blanco); 
+        margin:5rem 10rem 5rem 10rem;
+        padding-left:3rem;
+        padding-right:3rem;
+        border-radius:2rem;
+    }
+
+   
+    
+
 
 }
