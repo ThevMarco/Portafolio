@@ -26,7 +26,7 @@ body{
     font-family:var(--fontSecundaria);
     font-size:1.6rem;
     line-height:1.8;
-    background: linear-gradient(to bottom, var(--grey), var(--graylight)); 
+    background: linear-gradient(to left, var(--grey), var(--graylight)); 
     }
 
 
@@ -62,7 +62,7 @@ h1,h2,h3,h4{
     line-height:1.2;
 }
 h1{font-size:5rem;}
-h2{font-size:4.4rem;}
+h2{font-size:4.4rem; height:10rem;}
 h3{font-size:3.3rem;}
 h4{font-size:2.2rem;}
 img{max-width: 100%;}
@@ -132,10 +132,10 @@ align-items:center;
 .logo{
     margin-top:2rem;
 }
-img{
+.logo img{
     border:2px solid var(--colorPrimary);    
 }
-img:hover{
+.logo img:hover{
     border:2px solid;    
 }
 
@@ -155,22 +155,68 @@ img:hover{
 
 
 .cuadro{
-    margin:5rem 10rem 5rem 10rem;
+    margin:5rem 1rem 50rem 1rem;
     padding-left:3rem;
     padding-right:3rem;
-    border-radius:2rem;
+    border-radius:1rem;
+    display:block;
+    background:var(--blanco);
+    padding:2rem;
+    margin-bottom:auto;
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
 }
 
-.cuadro{
-display:block;
-background:var(--blanco);
-padding:2rem;
-margin-bottom:auto;}
+
+/*SLIDER SKILLS*/
+.slider-area{
+    margin:5rem 10rem 20rem 10rem;
+    height:auto;
+    overflow:hidden;
+}
+
+.slide-track{
+   display:flex;
+   animation:scroll 40s linear infinite;
+   -webkit-animation:scroll 40s linear infinite;
+   width: calc(100% * 22);
+}
+
+.slide{
+    margin:0 40px 0 40px;
+}
+.slide p{
+    font-family:var(--fontAux);
+    text-align:center;
+    font-size:2rem;
+}
 
 
 
+.slide img{
+    width:100%;
+}
+
+@keyframes scroll{
+    0%{
+        transform:translateX(0);
+        -webkit-transform:translateX(0);
+        -moz-transform:translateX(0);
+        -ms-transform:translateX(0);
+        -o-transform:translateX(0);
+}
+100%{
+    transform:translateX(calc(-200px * 11));
+    -webkit-transform:translateX(calc(-200px * 11));
+    -moz-transform:translateX(calc(-200px * 11));
+    -ms-transform:translateX(calc(-200px * 11));
+    -o-transform:translateX(calc(-200px * 11));
+}
 
 
+}
 
 
 
@@ -187,7 +233,6 @@ margin-bottom:auto;}
     background-size: cover;
     height: 160px;
 }
-
 
 
 
@@ -216,15 +261,30 @@ margin-bottom:auto;}
     }
 
     .cuadro{
-        background:var(--blanco); 
+        background:var(--blanco);
         margin:5rem 10rem 5rem 10rem;
         padding-left:3rem;
         padding-right:3rem;
-        border-radius:2rem;
-    }
+        border-radius:1rem;
+        -webkit-border-radius:1rem;
+        -moz-border-radius:1rem;
+        -ms-border-radius:1rem;
+        -o-border-radius:1rem;
+}
 
-   
-    
+   .sobre_mi{
+    display:flex;
+    margin:5rem 10rem 20rem 10rem;
+
+   }
+ 
+
+    section p{
+        
+        font-family:var(--fontAux);
+        font-size:2.5rem;
+        line-height:3.5rem;
+    }
 
 
 }
