@@ -6,6 +6,7 @@
     --negro:#000000;
     --grey:#e1e1e1;
     --colorHover:#15ADA0;
+    --colorRed: #CC0000;
     --fontPrincipal:'Raleway', sans-serif;
     --fontSecundaria:'Figtree', sans-serif;
     --fontAux:'Tilt Neon', cursive;
@@ -20,10 +21,9 @@ html{
 }
 
 body{
-  
     font-family:var(--fontSecundaria);
-    font-size:1.6rem;
-    line-height:1.8;
+    font-size:1.8rem;
+    line-height:1.5;
     background: linear-gradient(to left, var(--grey), var(--graylight)); 
     }
 
@@ -95,7 +95,7 @@ img{max-width: 100%;}
   grid-template-columns:repeat(2,1fr);
   grid-template-rows:repeat(2,1fr);
   height:100%;
-  grid-gap:1rem;
+
 }
 .saludo{
     display:block;
@@ -120,14 +120,16 @@ img{max-width: 100%;}
 .contenfoto{
     display:flex;
     justify-content:center;
+    align-items:start;
     height:100%; 
 }
 
 .contenfoto img{
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.9);
     border-radius:99px;
-    width:30%;
-    height:88%;
+    width:35%;
+    height:90%;
     margin-right:10rem;
     -webkit-border-radius:99px;
     -moz-border-radius:99px;
@@ -168,6 +170,52 @@ img{max-width: 100%;}
 }
 
 
+/*Proyectos*/
+.section-app{
+    display:grid;
+    margin:5rem 10rem 20rem 10rem;
+    grid-template-columns:repeat(2,1fr);
+
+}
+.description p{
+font-size:2rem;
+line-height:1.5;
+}
+/*BOTON PARA DOCUMENTACIÓIN PDF*/
+.boton a{
+    display:flex;
+    color:var(--blanco);
+    border-radius:1rem;
+    padding:5px;
+    background:var(--colorRed);
+    border:2px solid var(--colorRed);
+    -webkit-border-radius:1rem;
+    -moz-border-radius:1rem;
+    -ms-border-radius:1rem;
+    -o-border-radius:1rem;
+}
+
+.boton a:hover{
+    color: var(--blanco);
+    background:var(--colorRed);
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
 /*CLASE PADRE Y SUBCLASES PARA EL CONTACTO-*/
 .formulario{ 
     display:flex; 
@@ -176,7 +224,7 @@ img{max-width: 100%;}
 
 .formulario > * {
     padding:7rem;
-    width:60%;
+    width:50%;
     font-family:var(--fontPrincipal);
     
 }
@@ -216,7 +264,6 @@ margin-top:4rem;
 
 /*BOTON ENVIAR*/
 .boton{
-  
     display:flex;
     justify-content:end;
 }
@@ -253,23 +300,42 @@ margin-top:4rem;
 
 
 
-
-
 /*FOOTER*/
-.contenido-footer{
+.footer{
     background-image:url(../img/fondo_header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 160px;
+}
+
+.contenido-footer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.websites{
+   padding:2rem;
+}
+
+.websites img{
+    margin:3rem;
+}
+
+.websites img:hover{
+    cursor:pointer;
+    transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
 }
 
 
-
-
-
-
-
+.derechos p{
+    font-family:var(--fontSecundaria);
+}
 
 
 /*@MEDIA min 768px*/
@@ -292,7 +358,8 @@ margin-top:4rem;
 
     .cuadro{
         background:var(--blanco);
-        margin:5rem 10rem 5rem 10rem;
+        margin:5rem 10rem 7rem 10rem;
+        padding-bottom:10rem;
         padding-left:3rem;
         padding-right:3rem;
         border-radius:1rem;
@@ -304,20 +371,33 @@ margin-top:4rem;
 
    .sobre_mi{
     display:flex;
-    margin:5rem 10rem 20rem 10rem;
+    margin:5rem 20rem 20rem 20rem;
 
    }
  
 
-    section p{
-        
+    .sobre p{
+        text-align:center;
         font-family:var(--fontAux);
-        font-size:2.5rem;
-        line-height:3.5rem;
+        font-size:2.4rem;
+        line-height:3rem;
+    }
+    .section-app p{
+        font-family:var(--fontAux);
+        font-size:2.2rem;
+        line-height:2.6rem;
     }
 
 
 }
+
+
+
+
+
+
+
+
 
 
 
