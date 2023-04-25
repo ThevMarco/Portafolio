@@ -17,22 +17,43 @@
 </head>
 
 <body>
-<header class="header">
-    <div class="contenedor">
-        <div class="barra">
-            <a  class="logo" href="index.html">
-                <img src="img/logo_light.png" alt="Mi Logo">
-            </a>
-        <nav class="navegacion">
-            <a>Sobre mi</a>
-            <a>Proyectos</a>
-            <a>Contacto</a>
-            <a href="/MarcoResumen.pdf" target="_blank" rel="noopener noreferrer" download="CV Marco Acosta">Descargar CV</a>
-            <label class="switchTheme_switch">
-                <input class="switchtheme_input" type="checkbox" checked="">
-            </label>
-        </nav>
-    </div>
+
+
+
+    <header class="header">
+        <div class="contenedor">
+            <input class="toggler-menu" type="checkbox" id="toggle">
+            <nav>
+                <a  class="logo" href="index.html">
+                       <img src="img/logo_light.png">
+                   </a>
+       
+               <label class="navbar-toggler" for="toggle">
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+               </label>
+       
+               <ul class="nav-list">
+                   <li class="nav-item">
+                       <a class="nav-link">Sobre mi</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link">Proyectos</a>
+                   </li>
+       
+       <li class="nav-item">
+                           <a class="nav-link">Contacto</a>
+                       </li>
+       
+                   <li class="nav-item">
+                       <a class="nav-link" href="/MarcoResumen.pdf" target="_blank" rel="noopener noreferrer" download="CV Marco Acosta">Descargar CV</a>
+                   </li>
+                  
+               </ul>
+       
+           </nav>
+ 
 </div>
 
 <div class="texto-header">
@@ -54,17 +75,21 @@
 
 
 <div class="cuadro">
+    <h2 class="no-margin centrar-text">Sobre mi</h2>
     <div class="sobre_mi">
         <section class="sobre">
-            <h2 class="no-margin centrar-text">Sobre mi</h2>
+            <div class="imagen">
+                <img src="img/img_sobremi 1.png">
+            </div>
+            
             <p>
                 Soy un joven que le gusta aprender y mantenerse al día con las tecnologías y nuevas herramientas
                  que aparecen en el área TI. Me encuentro en Práctica y me manejo a nivel básico en distintos Lenguajes
                   y Herramientas, donde practique durante el transcurso de mis estudios superiores y en proyectos 
                   individuales en los que estoy trabajando. Cuando puedo, trato de aprender algo nuevo relacionado con el área. Ya que las ganas no me faltan.
-                  También me gusta practicar calistenia y ciclismo en mis tiempos libres. 
-                  
+                  También me gusta practicar calistenia y ciclismo en mis tiempos libres.            
             </p>
+            
         </section>
     </div>
     
@@ -236,9 +261,15 @@
                         Cabe destacar que la documentación de este proyecto fue realizada de forma ficticia en el tema de costos y presupuestos.
                         </p>
 
-                        <div class="boton">
-                            <a href="/documentacion.pdf" target="_blank" rel="noopener noreferrer" download="Documentacion">Documentación<img src="img/icon_pdf.png"></a>
+                        <div class="botones">
+                            <div class="boton-code">
+                                <a href="/github_heladitos" target="_blank" rel="noopener noreferrer" download="Documentacion">Código<img src="img/skills/icon_github.webp"></a>
+                            </div>
+                            <div class="boton-pdf">
+                                <a href="/documentacion.pdf" target="_blank" rel="noopener noreferrer" download="Documentacion">Documentación<img src="img/skills/icon_pdf.png"></a>
+                            </div>
                         </div>
+                        
                     </div>
 
                 <div class="slider-ice">
