@@ -19,12 +19,12 @@
 <body>
 
 
-
+<div id="inicio"></div>
     <header class="header">
         <div class="contenedor">
             <input class="toggler-menu" type="checkbox" id="toggle">
             <nav>
-                <a  class="logo" href="index.html">
+                <a href="#inicio" class="logo" >
                        <img src="img/logo_light.png">
                    </a>
        
@@ -36,14 +36,14 @@
        
                <ul class="nav-list">
                    <li class="nav-item">
-                       <a class="nav-link">Sobre mi</a>
+                       <a href="#sobremi" class="nav-link">Sobre mi</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link">Proyectos</a>
+                       <a href="#proyectos" class="nav-link">Proyectos</a>
                    </li>
        
        <li class="nav-item">
-                           <a class="nav-link">Contacto</a>
+                           <a href="#contacto" class="nav-link">Contacto</a>
                        </li>
        
                    <li class="nav-item">
@@ -73,11 +73,11 @@
 
 
 
-
-<div class="cuadro">
+<div id="sobremi"></div><!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
+<div  class="cuadro">
     <h2 class="no-margin centrar-text">Sobre mi</h2>
     <div class="sobre_mi">
-        <section class="sobre">
+        <section  class="sobre">
             <div class="imagen">
                 <img src="img/img_sobremi 1.png">
             </div>
@@ -244,7 +244,7 @@
                 </div>
 
             </div>
-        
+            <div id="proyectos"></div><!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
         </div>
 
 
@@ -293,6 +293,7 @@
 
 </div>
 
+<div id="contacto"></div><!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
 
 <div class="cuadro contacto">
     <h2 class="no-margin centrar-text">Contacto</h2>
@@ -333,7 +334,7 @@
 <footer class="footer">
     <div class="contenido-footer">
 
-        <a  class="logo" href="index.html">
+        <a class="logo" href="#inicio">
             <img src="img/logo_light.png" alt="Mi Logo">
         </a>
 
@@ -364,9 +365,7 @@
     </div>
     </footer>
 
-  
-
-
+    <script src="scroll.js"></script>
 </body>
 
 </html>

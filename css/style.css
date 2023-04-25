@@ -15,6 +15,7 @@
 html{
     box-sizing:border-box;
     font-size:62.5%;
+    scroll-behavior: smooth;
 }
 *,*:before,*:after{
     box-sizing:inherit;
@@ -32,6 +33,7 @@ body{
 .contenedor{
     position:fixed;
     width: 100%;
+    height:90px;
     align-items:center;
     background-color:var(--colorPrimary);
     z-index:999;
@@ -448,7 +450,7 @@ nav .nav-list .nav-link:hover {
    .contenedor{
    padding:0;
    }
-   
+
     nav .nav-list {
         display: grid;
         position: absolute;
