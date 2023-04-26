@@ -1,5 +1,5 @@
 
-/*SLIDER SKILLS*/
+/*SLIDER SKILLS*******/
 .slider-area{
     margin:5rem 10rem 20rem 10rem;
     height:auto;
@@ -8,15 +8,16 @@
 
 .slide-track{
    display:flex;
-   animation:scroll 43s linear infinite;
-   -webkit-animation:scroll 43s linear infinite;
+   animation:scroll 45s linear infinite;
+   -webkit-animation:scroll 45s linear infinite;
    width: calc(100% * 4);
 }
 
 .slide{
     flex:1 0 0;
     height:100%;
-   margin:0 40px 0 40px;
+   margin:0 40px 0 40px;  
+   
 }
 
 .slide:hover img{
@@ -44,11 +45,16 @@
     opacity: 1;
 }
 
+.slide .pslid{
+    text-align:center;
+    font-size:1.4rem;
+ 
+}
+
 
 .slide p{
     text-align:center;
     font-size:1.8rem;
-
 }
 
 .slide img{
@@ -84,5 +90,95 @@
     -moz-transform:translateX(0);
     -ms-transform:translateX(0);
     -o-transform:translateX(0);
+}
+}
+/*****************************************************/
+
+.slider-proyecto{
+    margin:2rem 2rem;
+    height:auto;
+    overflow: hidden;
+    background-color:var(--colorPrimary);
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.slide-pro{
+    display:flex;
+    animation:scroll 50s linear infinite;
+    -webkit-animation:scroll 50s linear infinite;
+    width:calc(50% * 6);
+}
+
+
+.sli{
+        height:100%;
+        width:50%;
+        object-fit:cover;
+        margin:1rem 0 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@MEDIA max 1366px al llegar cambia tamaños de contenido*/
+@media (max-width:1366px){
+    
+    .slider-area{
+        margin:5rem 1rem 18rem 1rem;
+    }
+    .slide-track{
+        display:flex;
+        animation:scroll 50s linear infinite;
+        -webkit-animation:scroll 50s linear infinite;
+        width: calc(100% * 4);
+}
+    .slide{
+       margin:0 2rem 0 2rem;
+    }
+
+
+    .slide .pslid{
+        text-align:center;
+        font-size:1.5rem;
+        margin:0 0 3rem 0;
+    }
+    
+    .slide img{
+        display:flex;
+        object-fit:cover;
+        margin-bottom:3rem;
+    }
+
+
+    .contenfoto img{
+        width:40%;
+        height:87%;
+       margin-left:10rem;
+    }
+
+
+}
+/***********************/
+
+@media(max-width:980px){
+    .slide-track{
+        min-width: calc(100% * 5);      
+}
+
+.slide .pslid{
+    font-size:1.3rem;
 }
 }

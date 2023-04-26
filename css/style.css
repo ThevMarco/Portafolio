@@ -179,7 +179,7 @@ footer .logo{
 /*Proyectos*/
 .section-app{
     display:grid;
-    margin:5rem 10rem 20rem 10rem;
+    margin:5rem 0rem 20rem 10rem;
     grid-template-columns:repeat(2,1fr);
 
 }
@@ -565,9 +565,10 @@ justify-content:center;
 
 .section-app p{
     font-family:var(--fontAux);
-    font-size:2.2rem;
-    line-height:2.9rem;
+    font-size:1.7rem;
+    line-height:2.5rem;
 }
+
 
 
 
@@ -578,10 +579,28 @@ justify-content:center;
 /*@MEDIA max 1366px al llegar cambia tamaños de contenido*/
 @media (max-width:1366px){
     
+
+    .cuadro{
+        margin:5rem 3rem 5rem 3rem;
+       padding-top:10rem;
+        padding-left:3rem;
+        padding-right:3rem;
+        border-radius:1rem;
+        -webkit-border-radius:1rem;
+        -moz-border-radius:1rem;
+        -ms-border-radius:1rem;
+        -o-border-radius:1rem;
+    }
+
+
+
+
     .contenfoto img{
-        width:50%;
+        width:47%;
         height:90%;
+       margin-left:10rem;
     }
 
 
 }
+/*********************************************************/
