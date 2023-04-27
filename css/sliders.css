@@ -107,19 +107,18 @@
     -o-border-radius:10px;
     padding:2rem 0 2rem 0;
  overflow:hidden;
+ overflow-x:scroll;
 
 
 }
 
 .slide-pro{
     display:grid;
-    grid-template-columns:repeat(12, 1fr);
-    animation:scroll 50s linear infinite;
-    -webkit-animation:scroll 50s linear infinite;
-    width:calc(100% * 4);
-
+    grid-template-columns:repeat(11, 1fr);
+    animation:scroll 45s linear infinite;
+    -webkit-animation:scroll 45s linear infinite;
+    width: calc(100% * 4);
 }
-
 
 .sli{
    margin:4px 15px 0 0;
