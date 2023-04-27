@@ -2,7 +2,7 @@ window.onload = () => {
     let links = document.querySelectorAll('.nav-link')
     let linksLogo = document.querySelectorAll('.logo')
     
-    let inicio = linksLogo[-1]
+    let inicio = linksLogo[0]
     inicio.addEventListener('click',()=>{
         scrollSuave('#inicio', 900, 91)
     })

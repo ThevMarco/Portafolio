@@ -181,7 +181,7 @@ footer .logo{
     display:grid;
     margin:5rem 0rem 20rem 10rem;
     grid-template-columns:repeat(2,1fr);
-
+    grid-gap:5rem;
 }
 .description p{
 font-size:2rem;

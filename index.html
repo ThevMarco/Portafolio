@@ -73,9 +73,9 @@
 
 
 
-<div id="sobremi"></div><!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
+<!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
 <div  class="cuadro">
-    <h2 class="no-margin centrar-text">Sobre mi</h2>
+    <h2 id="sobremi" class="no-margin centrar-text">Sobre mi</h2>
     <div class="sobre_mi">
         <section  class="sobre">
             <div class="imagen">
@@ -244,11 +244,11 @@
                 </div>
 
             </div>
-            <div id="proyectos"></div><!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
+
         </div>
 
-
-        <div class="proyectos">
+<!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
+        <div id="proyectos" class="proyectos">
             <h2 class="no-margin centrar-text">Proyectos</h2>
             <section class="section-app">
                 
@@ -271,12 +271,15 @@
                         </div>
                         
                     </div>
+<div class="ind">
+  
+<div class="slider-principal">
 
-                <div class="slider-proyecto">
+    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+            <div class="slider-proyecto">
                     <div class="slide-pro">
                         
-
-                            
 
                         <div class="sli">
                             <img src="/img/slider_proyecto/1.jpg">
@@ -317,16 +320,21 @@
                             
                     </div>
                 </div>
-            </section>
+                <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+            </div>
+            <div class="indicadores">
+   
+            </div>
         </div>
+    </section>
+</div>
 
 
 </div>
 
-<div id="contacto"></div><!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
-
+<!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
 <div class="cuadro contacto">
-    <h2 class="no-margin centrar-text">Contacto</h2>
+    <h2 id="contacto" class="no-margin centrar-text">Contacto</h2>
 
     <form class="formulario">
 
@@ -395,8 +403,9 @@
     </div>
     </footer>
 
-    <script src="scroll.js"></script>
-    
+    <script src="Js/scroll.js"></script>
+    <script src="Js/slidep.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
