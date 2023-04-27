@@ -4,7 +4,7 @@ window.onload = () => {
     
     let inicio = linksLogo[-1]
     inicio.addEventListener('click',()=>{
-        scrollSuave('inicio', 900, 91)
+        scrollSuave('#inicio', 900, 91)
     })
 
     let sobreMi = links[0]
@@ -17,9 +17,9 @@ window.onload = () => {
       scrollSuave('#proyectos', 900, 91)
     })
   
-    let tercero = links[2]
-    tercero.addEventListener('click', () => {
-      scrollSuave('#tercero', 900, 91)
+    let contacto = links[2]
+    contacto.addEventListener('click', () => {
+      scrollSuave('#contacto', 900, 91)
     })
   }
   
