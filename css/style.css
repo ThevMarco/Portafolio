@@ -268,8 +268,7 @@ line-height:1.5;
 .formulario > * {
     padding:7rem;
     width:50%;
-    font-family:var(--fontPrincipal);
-    
+    font-family:var(--fontPrincipal); 
 }
 
 .contenedor-campos{
@@ -316,7 +315,7 @@ margin-top:4rem;
     background:var(--blanco);
     border:0;
     text-transform:uppercase;
-    padding:2rem;
+    padding:1rem;
     border-radius:2rem;
     -webkit-border-radius:2rem;
     -moz-border-radius:2rem;
@@ -382,8 +381,6 @@ margin-top:4rem;
 
 
 
-
-
 .header nav {
     display: flex;
     justify-content: space-between;
@@ -391,9 +388,7 @@ margin-top:4rem;
     height: 75px;
     line-height: 70px;
     background-color:var(--colorPrimary);
-
 }
-
 
 
 nav .nav-list {
@@ -409,11 +404,8 @@ nav .nav-list {
 
 
 nav .nav-list .nav-item {
-  
     height: 100%;
     transition: .4s; 
-
-    
 }
 
 
@@ -446,10 +438,7 @@ nav .nav-list .nav-link:hover {
         align-content:center;
     }
 }
-
-
 @media (max-width:768px){
-
    .contenedor{
    padding:0;
    }
@@ -472,12 +461,10 @@ nav .nav-list .nav-link:hover {
     nav .nav-list .nav-item a:hover {
         background-color:var(--blanco);
     }
-
     nav .nav-list .nav-link:hover {
         padding-left:5rem;
         padding-right:5rem;
     }
-
 
     nav .navbar-toggler {
         display: grid !important;
@@ -553,7 +540,6 @@ align-items:center;
 .imagen{
 display:flex;
 justify-content:center;
-
 }
 
 .sobre p{
@@ -574,6 +560,67 @@ justify-content:center;
 
 
 
+
+
+
+
+
+
+
+
+@media(max-width:1200px){
+
+   
+
+
+
+    .cuadro{
+        margin:0;
+        padding:0;
+    }
+    .contacto{
+        padding-bottom:4rem;
+    }
+    .section-app{
+        display:grid;
+        margin:0 0 0 0 ;
+        grid-template-rows:repeat(2,50%);
+        grid-template-columns:1fr;
+        grid-gap:7rem;
+    }
+    .description{
+      grid-row: 2 / -1;
+      padding-bottom:20rem;
+    }
+    .description h3{
+        display:flex;
+        justify-content:center;
+    }
+    .ind{
+        grid-row: 1 / 2;
+    }
+    .botones{
+        display:flex;
+        justify-content:center;
+        margin-top:10rem;
+        }
+
+        .formulario{ 
+            display:flex; 
+            justify-content:center; 
+        }
+        
+        .formulario > * {
+            padding:4rem;
+            width:70%;
+            font-family:var(--fontPrincipal); 
+        }
+
+        .boton{
+            justify-content:center;
+        }
+
+}
 
 
 
@@ -607,3 +654,20 @@ justify-content:center;
 
 }
 /*********************************************************/
+
+
+
+
+
+
+@media(max-width:1080px){
+
+    .contenfoto{
+        height:100%; 
+    }
+    
+    .contenfoto img{
+        min-width:50%;
+        min-height:90%;
+    }
+}
