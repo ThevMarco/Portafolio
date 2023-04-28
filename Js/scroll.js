@@ -4,22 +4,22 @@ window.onload = () => {
     
     let inicio = linksLogo[0]
     inicio.addEventListener('click',()=>{
-        scrollSuave('#inicio', 900, 91)
+        scrollSuave('#inicio', 100, 91)
     })
 
     let sobreMi = links[0]
     sobreMi.addEventListener('click', () => {
-      scrollSuave('#sobremi', 900, 91)
+      scrollSuave('#sobremi', 100, 91)
     })
   
     let proyectos = links[1]
     proyectos.addEventListener('click', () => {
-      scrollSuave('#proyectos', 900, 91)
+      scrollSuave('#proyectos', 100, 91)
     })
   
     let contacto = links[2]
     contacto.addEventListener('click', () => {
-      scrollSuave('#contacto', 900, 91)
+      scrollSuave('#contacto', 100, 91)
     })
   }
   
