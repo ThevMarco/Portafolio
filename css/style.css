@@ -182,7 +182,7 @@ footer .logo{
 /*Proyectos*/
 .section-app{
     display:grid;
-    margin:5rem 0rem 20rem 10rem;
+    margin:5rem 0rem 20rem 0rem;
     grid-template-columns:repeat(2,1fr);
     grid-gap:5rem;
 }
@@ -441,7 +441,19 @@ nav .nav-list .nav-link:hover {
         align-content:center;
     }
 }
+
+
+
+
+
+
+
+
+
+
 @media (max-width:768px){
+
+
    .contenedor{
    padding:0;   
 }
