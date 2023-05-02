@@ -9,10 +9,12 @@ $(function () {
         
         responsive: [
             {    
-                breakpoint: 768,
+                breakpoint: 758,
                 settings: {
                     arrows: true,
-                    slidesToShow: 3,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth:true,
                     prevArrow: '<span class = "priv_arrow"><i class="fas fa-angle-left"></i></span>',
                     nextArrow: '<span class = "priv_arrow"><i class="fas fa-angle-right"></i></span>',
                 }
@@ -21,8 +23,8 @@ $(function () {
                 breakpoint: 666,
                 settings: {
                     arrows: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     prevArrow: '<span class = "priv_arrow"><i class="fas fa-angle-left"></i></span>',
                     nextArrow: '<span class = "priv_arrow"><i class="fas fa-angle-right"></i></span>',
                 }
@@ -33,6 +35,8 @@ $(function () {
                     arrows: true,
                     centerMode: true,
                     slidesToShow: 1,
+                    slidesToScroll: 1,
+                    variableWidth:true,
                     prevArrow: '<span class = "priv_arrow"><i class="fas fa-angle-left"></i></span>',
                     nextArrow: '<span class = "priv_arrow"><i class="fas fa-angle-right"></i></span>',
                
