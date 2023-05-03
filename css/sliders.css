@@ -195,67 +195,25 @@
 
 
 @media(max-width:860px){
-
+ 
 
      .slide-track{
       display:grid;
       grid-template-columns:repeat(2,1fr);
-      column-gap:2rem;
-      row-gap:2rem;
-     
      }
      
      .slids{
-         margin:0;
-        padding:0; 
+         margin:0 5rem 0 5rem;
         justify-content:center;
      
      }
-     
-     .slids:hover img{
-         transform:none;
-         -webkit-transform:none;
-         -moz-transform:none;
-         -ms-transform:none;
-         -o-transform:none;
-         transition:none;
-         -webkit-transition:none;
-         -moz-transition:none;
-         -ms-transition:none;
-         -o-transition:none;
-}
-     
-     .slids .caption{
-      text-align:center;
-      font-size:2rem;
-      font-family:var(--fontAux);
-      background-color:none;
-      color: var(--negro);
-      opacity: 1;
-      transition:none;
-}
-     
-     .slids:hover .caption{
-         opacity:10;
-     }
-     
      .slids img{
-        
-         width:120px;
-         object-fit:cover;
+         width:100px;
      }
-     
-     .slids img:hover{
-         cursor:pointer;
-     }
-
-
-
+ 
 
 
     /******SLIDER PARA PROYECTOS********/
-
-
 .slick-slider{
     max-width:690px;
     max-height:600px;
@@ -296,13 +254,15 @@
        opacity: 0;
        transition: opacity 0.5s ease;
      }
+ 
 }
 
 
 
 
 @media(max-width:758px){
-/******SLIDER PARA PROYECTOS********/
+    /******SLIDER PARA PROYECTOS********/
+
 .slick-slider{
    max-width:400px;
    height:550px;
@@ -329,21 +289,17 @@
 @media(max-width:666px){
     /******SLIDER PARA PROYECTOS********/
  
- 
-    
     .slick-slider{
        max-width:388px;
        height:550px;
     }
-    
+
     .slick-track{
      padding:6rem;
-     
     }
     .sli img{
         max-width:200px;
     }
-
     .slider{
         position:flex;
     }
@@ -351,9 +307,6 @@
     {
        padding:10px;
     }
-
-    
-
 /**********************************/
 }
 
@@ -363,14 +316,19 @@
 
 
 
-
-
-
-
-
 @media(max-width:545px){
-    /******SLIDER PARA PROYECTOS********/
+
+
+    .slide-track{
+        gap:1rem;
+       }
+       .slids .caption{
+        margin:-1rem;
+    }
     
+
+
+    /******SLIDER PARA PROYECTOS********/
     .slick-slider{
        max-width:290px;
     }
@@ -390,3 +348,27 @@
   
 /**********************************/
 }
+
+
+@media(max-width:448px){
+
+
+    .slider-area{
+        padding:3rem 0 5rem 0;
+     }
+
+    .slids{
+        margin-bottom:3rem;
+    }
+       .slids .caption{
+        font-size:1rem;
+        margin:-1rem;
+      
+    }
+    .slids img{
+        width:120%;
+        object-fit:cover;
+    }
+
+}
+
