@@ -1,93 +1,28 @@
-const switchButton = document.getElementById("switch");
+load();
+const lightMode = document.querySelector(".light-mode-btn");
+const darkMode = document.querySelector(".dark-mode-btn");
 
-switchButton.addEventListener('click', ()=>{
-    switchButton.classList.toggle('active');
-});
+lightMode.addEventListener("click", setDarkMode);
+darkMode.addEventListener("click", setLightMode);
+
+function setLightMode(){
+setTheme("light");
+}
 
 
 function setDarkMode(){
-setUserTheme("dark");
-}
-
-function setLightMode(){
-setUserTheme("light");
+setTheme("dark");
 }
 
 
-function setUserTheme(newTheme){
+function setTheme(newTheme){
 document.documentElement.setAttribute("data-theme", newTheme);
+localStorage.setItem("theme", newTheme);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*load();
-const switchButton = document.getElementById("switch");
-
-switchButton.addEventListener('click', ()=>{
-    let body=document.body.classList.toggle('dark');
-    switchButton.classList.toggle('active');
-    localStorage.setItem("switch",body);
-
-
-    store(document.body.classList.contains('dark'));
-    
-
-});
 
 function load(){
-    const dark = localStorage.getItem('dark');
-    
-    if(!dark){
-        store('false');
-    }
-
-    else if(dark == 'true'){
-        document.body.classList.add('dark');
-}
+    const storedTheme = localStorage.getItem("theme");
+   setTheme(storedTheme);
 }
 
-
-function store(value){
-localStorage.setItem('dark',value);
-}
-*/
