@@ -45,10 +45,10 @@ window.onload = () => {
 
 
   const easeInOutQuad = (t, b, c, d) => {
-    t /= d / 2; // Dividimos el tiempo transcurrido por la mitad de la duración
-    if (t < 1) { // Si el tiempo es menor que 1, aplicamos una función "ease-in"
-      return c / 2 * t * t + b; // Fórmula para "ease-in"
-    } else { // Si el tiempo es mayor o igual a 1, aplicamos una función "ease-out"
+    t /= d / 2;                  // Dividimos el tiempo transcurrido por la mitad de la duración
+    if (t < 1) {                 // Si el tiempo es menor que 1, aplicamos una función "ease-in"
+      return c / 2 * t * t + b;  // Fórmula para "ease-in"
+    } else {                     // Si el tiempo es mayor o igual a 1, aplicamos una función "ease-out"
       t--;
       return -c / 2 * (t * (t - 2) - 1) + b; // Fórmula para "ease-out"
     }

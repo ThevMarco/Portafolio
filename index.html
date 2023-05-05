@@ -8,6 +8,7 @@
     <meta name="author" content="Marco Acosta">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="/img/icon_pagina.jpg">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -43,13 +44,18 @@
                    <li class="nav-item">
                        <a href="#proyectos" class="nav-link">Proyectos</a>
                    </li>
-       
-       <li class="nav-item">
-                           <a href="#contacto" class="nav-link">Contacto</a>
-                       </li>
+                   <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </li>
        
                    <li class="nav-item">
                        <a class="nav-link" href="/MarcoResumen.pdf" target="_blank" rel="noopener noreferrer" download="CV Marco Acosta">Descargar CV</a>
+                   </li>
+                   <li class="nav-item">
+                    <button class="switchDark active" id="switch">
+                        <span><i class='bx bx-sun'></i></span>
+                        <span><i class='bx bx-moon' ></i></span>
+                    </button>
                    </li>
                   
                </ul>
@@ -76,7 +82,7 @@
 
 
 <!--SEPARACION PARA EL SCROLL SUAVE (encaje con el parrafo)-->
-<div  class="cuadro">
+<div class="cuadro">
     <h2 id="sobremi" class="no-margin centrar-text">Sobre mi</h2>
     <div class="sobre_mi">
         <section  class="sobre">
@@ -352,16 +358,15 @@
     </div>
     </footer>
 
-    <script src="Js/scroll.js"></script>
-   <!-- <script src="Js/slidep.js"></script>-->
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="Js/app.js"></script>
 
+<script src="Js/scroll.js"></script>
+<script src="Js/app.js"></script>
+<script src="Js/switch.js"></script>
 
 
 </body>
