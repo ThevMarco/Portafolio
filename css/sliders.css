@@ -351,7 +351,10 @@
 
 
 @media(max-width:448px){
-
+    
+.description{
+    margin:0;
+}
 
     .slider-area{
         padding:3rem 0 5rem 0;

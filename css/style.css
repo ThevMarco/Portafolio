@@ -1,4 +1,4 @@
-:root[data-theme="light"]{
+:root{
     --colora:#141414;
     --colorPrimary:#141414;
     --colorSecundary:#8D7B68;
@@ -53,13 +53,13 @@ html{
     box-sizing:border-box;
     font-size:62.5%;
     scroll-behavior: smooth;
-  
 }
 *,*:before,*:after{
     box-sizing:inherit;
 }
 
 body{
+    transition:var(--transition);
     font-family:var(--fontSecundaria);
     font-size:1.8rem;
     line-height:1.5;
@@ -77,9 +77,11 @@ body{
     z-index:999;
     padding-top:5px;
     padding-bottom:5px;
+
 }
 
 a{
+  
     font-family:var(--fontAux);
     text-decoration:none;
     font-size:1.7rem;
@@ -96,11 +98,13 @@ a:hover {
 /***********************************/
 .nav-btn-dark{
     display: flex;
+    padding:0;
+    margin:0;
+   
 }
 .dark-mode-btn,
 .light-mode-btn{
     border:none;
-    
     padding:0;
     background:none;
     cursor:pointer;
@@ -129,6 +133,7 @@ a:hover {
 
 
 h1,h2,h3,h4{ 
+    transition:var(--transition);
     color:var(--colora);
     font-family:var(--fontPrincipal);
     line-height:1.2;
@@ -137,8 +142,8 @@ h1{font-size:5rem;}
 h2{font-size:4rem; height:8rem;}
 h3{font-size:3.4rem;}
 h4{font-size:2.2rem;}
-p{color:var(--colora);}
-img{max-width: 100%;}
+p{transition:var(--transition);color:var(--colora);}
+img{ max-width: 100%;}
 
 .saludo p{
     font-size:3rem;
@@ -156,7 +161,7 @@ img{max-width: 100%;}
 
 
 .header{
-
+    
     background-image:var(--imagen-header);
     height:90rem;
     background-size:cover;
@@ -168,6 +173,7 @@ img{max-width: 100%;}
 
 
 .texto-header{
+
   display:grid;
   grid-template-columns:repeat(2,1fr);
   grid-template-rows:repeat(2,1fr);
@@ -185,7 +191,9 @@ img{max-width: 100%;}
     font-family:var(--fontAux);
     font-size:2.1rem;
 }
-
+.caption p{
+    color:var(--blanco);
+}
 
 
 
@@ -193,11 +201,13 @@ img{max-width: 100%;}
 
 /*Contenido de la Foto perfil en el Header*/
 .fotoCV{
+
     grid-column:2 / 3;
     grid-row:-2 / 3;
 
 }
 .contenfoto{
+
     display:flex;
     justify-content:center;
     align-items:start;
@@ -205,7 +215,8 @@ img{max-width: 100%;}
 }
 
 .contenfoto img{
-
+    background:var(--cuadro-conten);
+    transition:var(--transition);
     box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.9);
     border-radius:99px;
     width:35%;
@@ -493,6 +504,41 @@ nav .nav-list .nav-link:hover {
     -o-border-radius:10px;
 }
 
+@media(max-width:960px){
+    .nav-btn-dark{
+        display: flex;
+        padding:0;
+    }
+    .header nav{
+        display:flex;
+        padding-left:4px;
+    }
+
+    nav .nav-list .nav-item {
+        display: flex;
+        justify-content:center;
+        align-content:center;
+    }
+    nav .nav-list .nav-item .nav-link{
+        font-size:16.4px;
+    }
+
+    .nav-btn-dark{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin:35px 0 0 0;
+        padding:0 0 0 0;
+    }
+    .dark-mode-btn,
+    .light-mode-btn{
+        padding:0;
+        margin:0;
+    }
+   
+}
+
+
 
 @media (max-width: 935px) {
 
@@ -609,6 +655,12 @@ grid-gap:2rem;
     nav .nav-list .nav-item a:hover {
         background-color:var(--blanco);
     }
+
+    nav .nav-list .nav-item .nav-link{
+        font-size:2rem;
+    }
+
+
     nav .nav-list .nav-link:hover {
         padding-left:5rem;
         padding-right:5rem;
