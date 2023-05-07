@@ -11,13 +11,24 @@
         const mensaje = formulario.get("mensaje");
 
         if(!nombre || !correo || !mensaje){
-            Swal.fire({
-                position:'center',
-                backdrop:'true',
+              const Toast = Swal.mixin({
+                toast: true,
+                backdrop:true,
+                position: 'top',
+                showConfirmButton: true,
+                timer: 4000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              
+              Toast.fire({
                 icon: 'error',
                 title: 'Inválido',
                 text: 'Revise los datos del formulario',
-                padding:'3rem'
+                backdrop:true
               })
     
         }
@@ -31,27 +42,45 @@
         })
     
         if(response.ok){
-            
-            Swal.fire({
-    
-                position:'center',
-                backdrop:'true',
+            const Toast = Swal.mixin({
+                backdrop:true,
+                toast: true,
+                position: 'top',
+                showConfirmButton: true,
+                timer: 4000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              Toast.fire({
+                backdrop:true,
                 icon: 'success',
                 title: 'Enviado',
-                text: 'Gracias, te responderé muy pronto',
-                padding:'3rem'
+                text: 'Gracias, te responderé muy pronto'
               })
               this.reset()
         }
         else{
-    
-            Swal.fire({
+            const Toast = Swal.mixin({
+                backdrop:true,
+                toast: true,
+                position: 'top',
+                showConfirmButton: true,
+                timer: 4000,
+                timerProgressBar: true,
+                didOpen: (toast) => {
+                  toast.addEventListener('mouseenter', Swal.stopTimer)
+                  toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+              })
+              Toast.fire({
+                backdrop:true,
                 position:'center',
-                backdrop:'true',
                 icon: 'error',
                 title: 'Oops...',
-                text: 'No se pudo enviar el Mensaje',
-                padding:'3rem'
+                text: 'No se pudo enviar el Mensaje'
               })
               this.reset()
         }
