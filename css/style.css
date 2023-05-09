@@ -17,7 +17,7 @@
     --colorSwitchSun:#FAD961;
     --transition:0.5s ease-in-out;
     --fondo:linear-gradient(to left, var(--grey), var(--graylight));
-    --imagen-header: url('../img/fondo_header.jpg');
+    --imagen-header: url('../img/fondo_header.webp');
     --contenedor-campo:linear-gradient(260deg, rgba(166,174,179,1) 0%, rgba(227,227,244,1) 100%, rgba(0,212,255,1) 100%);
 }
 
@@ -40,7 +40,7 @@
     --colorSwitchSun:#FAD961;
     --transition:0.5s ease-in-out;
     --fondo:#141414;
-    --imagen-header: url('../img/fondo_header_dark.jpg');
+    --imagen-header: url('../img/fondo_header_dark.webp');
     --contenedor-campo:linear-gradient(0deg, rgba(10,49,57,1) 55%, rgba(4,26,38,1) 100%, rgba(227,227,244,1) 100%);
 }
 
